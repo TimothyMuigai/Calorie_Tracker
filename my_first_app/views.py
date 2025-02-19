@@ -9,7 +9,7 @@ def show_cal(request):
     calorie_amount = 0
     for items in food_items:
         calorie_amount+=items.amount_of_calories
-    return render(request, 'table.html', {'calorie_amount': calorie_amount, 'foodItems': food_items})
+    return render(request, 'table.html', {'calorie_amount': calorie_amount, 'food_items': food_items})
 
 def add_data(request):
     if request.method == 'POST':
